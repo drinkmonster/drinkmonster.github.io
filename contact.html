@@ -7,9 +7,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <meta name="description"
-    content="benike's epic personal website filled with useless information, you probably won't enjoy the viewing experience.">
   <title>benjo.</title>
+  <meta name="description" content="how to contact me">
 </head>
 
 <body>
@@ -20,14 +19,20 @@
     <span style="color: #fff;">|</span>
     <a href="./whatido.html">what i do</a>
     <span style="color: #fff;">|</span>
-    <a href="./contact.html">contact</a>
+    <a href="#">contact</a>
   </div>
   <div class="container">
-    <img class="pfp" src="static/pfp.webp"
-      alt="Profile Picture">
     <div class="title">
-      <p class="name">benjo.</p>
-      <p class="role">student</p>
+      <p class="name">How do I contact you?</p>
+      <p class="role">why would you want to?</p>
+      <p>If you have a business opportunity not worth missing you can reach me here:</p>
+      <p>Email: <a href="mailto:beni98@cock.li" class="link">beni98@cock.li</a></p>
+      <p>Discord(ew):
+        <code class="discord" onclick="copyConfig('benike#8102')">benike#8102</code>
+      </p>
+      <p>If you want to contact me about why the site is this ugly, then my answer is: <br> i don't give a fuck about
+        making
+        this site look nice (nor the source of it).</p>
     </div>
     <div class="line"></div>
     <div class="social-buttons">
@@ -45,22 +50,12 @@
       </a>
     </div>
   </div>
+  <script>
+    function copyConfig(txt) {
+      navigator.clipboard.writeText(txt);
+      alert("Copied to clipboard!");
+    }
+  </script>
 </body>
 
 </html>
-
-<script>
-  const role = document.querySelector('.role');
-  if (role) {
-    let counter = 0;
-    const roles = ['gamer', 'programmer', 'student'];
-    setInterval(() => {
-      role.style.opacity = 0;
-      setTimeout(() => {
-        role.innerHTML = roles[counter];
-        role.style.opacity = 1;
-        counter = (counter + 1) % roles.length;
-      }, 500);
-    }, 2000);
-  }
-</script>

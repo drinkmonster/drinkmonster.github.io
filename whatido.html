@@ -7,9 +7,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <meta name="description"
-    content="benike's epic personal website filled with useless information, you probably won't enjoy the viewing experience.">
   <title>benjo.</title>
+  <meta name="description" content="what I do">
 </head>
 
 <body>
@@ -18,16 +17,23 @@
     <span style="color: #fff;">|</span>
     <a href="./other.html">other sites</a>
     <span style="color: #fff;">|</span>
-    <a href="./whatido.html">what i do</a>
+    <a href="#">what i do</a>
     <span style="color: #fff;">|</span>
     <a href="./contact.html">contact</a>
   </div>
   <div class="container">
-    <img class="pfp" src="static/pfp.webp"
-      alt="Profile Picture">
     <div class="title">
-      <p class="name">benjo.</p>
-      <p class="role">student</p>
+      <p class="name">What do you even do? / Who even are you?</p>
+      <p class="role">I exist. / idk tbh</p>
+      <p>I'm a very based student at Petrik as an IT student. I am a hobby programmer and a very epic gamer.</p>
+      <p>Other than that I (try to) program (or help with) very epic open source projects such as <a target="_blank"
+          class="link" href="https://github.com/benilol98/libr34-devel">libr34-devel</a>.
+      </p>
+      <p>You can see my every contribution on my very epic <a class="link" target="_blank"
+          href="https://github.com/benilol98">GitHub</a> where you can feel free to follow me.</p>
+      <p>I also host:</p>
+      <a target="_blank" href="https://r34.benike.monster" class="link">libr34-devel</a>
+      <a target="_blank" href="https://git.benike.monster" class="link">Gitea</a>
     </div>
     <div class="line"></div>
     <div class="social-buttons">
@@ -48,19 +54,3 @@
 </body>
 
 </html>
-
-<script>
-  const role = document.querySelector('.role');
-  if (role) {
-    let counter = 0;
-    const roles = ['gamer', 'programmer', 'student'];
-    setInterval(() => {
-      role.style.opacity = 0;
-      setTimeout(() => {
-        role.innerHTML = roles[counter];
-        role.style.opacity = 1;
-        counter = (counter + 1) % roles.length;
-      }, 500);
-    }, 2000);
-  }
-</script>

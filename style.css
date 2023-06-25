@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  text-align: center;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+  color: grey;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.discord:hover {
+  text-decoration: underline;
+}
+
+.webring {
+  height: 31px;
+  width: 88px;
+}
+
+.discord {
+  color: grey;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.1);
+}
+
+.social-buttons a {
+  transition: all .2s ease-in-out;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.pfp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+}
+.name {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.role{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
